@@ -7,15 +7,28 @@
   <meta name="description" content="In-home integrative nutrition coaching in Gig Harbor + Tacoma. Helping women rebuild a peaceful relationship with food.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- Navbar (hidden initially, reveals on scroll) -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="navbar-brand">Pleasure Nutrition</a>
+      <div class="navbar-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn-primary btn-nav">Schedule a Session</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- Hero -->
   <section class="hero">
     <div class="hero-image">
-      <img src="images/alexia_banner.png" alt="Alexia Valdes, integrative nutrition coach">
+      <img src="images/alexia-with-veggies.jpg" alt="Alexia Valdes holding fresh vegetables with a colorful food board">
     </div>
     <div class="hero-content">
       <p class="business-name">Pleasure Nutrition</p>
@@ -25,138 +38,211 @@
         <a href="#contact" class="btn btn-primary">Schedule a Session</a>
         <a href="sms:2533639467?body=Hi%20Alexia%2C%20I%20have%20a%20question%20about%20nutrition%20coaching" class="btn btn-secondary mobile-only">Text Me a Question</a>
       </div>
-      <p class="trust-line">M.S. in Integrative Nutrition (Bastyr University, 2024) • HAES-aligned • Intuitive Eating-informed</p>
+      <p class="trust-line">M.S. in Integrative Nutrition (Bastyr University, 2024) · WA State Certified Nutritionist · HAES-aligned</p>
+    </div>
+  </section>
+
+  <!-- Photo Mosaic -->
+  <section class="photo-mosaic">
+    <div class="mosaic-grid">
+      <div class="mosaic-item reveal">
+        <img src="images/food-board-overhead.jpg" alt="Colorful charcuterie and fruit board" loading="lazy">
+      </div>
+      <div class="mosaic-item reveal" style="--delay: 0.1s">
+        <img src="images/alexia-outdoor-tree.jpg" alt="Alexia outdoors in nature" loading="lazy">
+      </div>
+      <div class="mosaic-item reveal" style="--delay: 0.2s">
+        <img src="images/alexia-playful.jpg" alt="Alexia having fun with food" loading="lazy">
+      </div>
+      <div class="mosaic-item reveal" style="--delay: 0.3s">
+        <img src="images/alexia-movement.jpg" alt="Alexia enjoying movement outdoors" loading="lazy">
+      </div>
     </div>
   </section>
 
   <!-- Resonance -->
   <section class="resonance">
-    <h2>You might be in the right place if…</h2>
+    <h2 class="reveal">You might be in the right place if…</h2>
     <ul class="resonance-list">
-      <li>You're tired of "start over Monday" dieting cycles</li>
-      <li>Tracking calories or macros has made food stressful</li>
-      <li>You want meal ideas that work with your real life—neurotype included</li>
-      <li>You want health support that doesn't center weight loss</li>
+      <li class="reveal">You're tired of "start over Monday" dieting cycles</li>
+      <li class="reveal" style="--delay: 0.05s">Tracking calories or macros has made food stressful</li>
+      <li class="reveal" style="--delay: 0.1s">You want meal ideas that work with your real life—neurotype included</li>
+      <li class="reveal" style="--delay: 0.15s">You want health support that doesn't center weight loss</li>
     </ul>
   </section>
 
   <!-- Benefits -->
-  <section class="benefits">
-    <h2>What we'll work on together</h2>
-    <ul class="benefits-list">
-      <li>
-        <span class="benefit-icon">✦</span>
-        <span>Practical meal ideas you actually enjoy—no rigid meal plans</span>
-      </li>
-      <li>
-        <span class="benefit-icon">✦</span>
-        <span>Grocery swaps that fit your taste, budget, and needs</span>
-      </li>
-      <li>
-        <span class="benefit-icon">✦</span>
-        <span>Gentle routines for energy, digestion, and mood support</span>
-      </li>
-      <li>
-        <span class="benefit-icon">✦</span>
-        <span>Food prep strategies that match your schedule and household</span>
-      </li>
-      <li>
-        <span class="benefit-icon">✦</span>
-        <span>Unlearning diet culture and building intuitive eating skills</span>
-      </li>
-    </ul>
+  <section class="benefits" id="services">
+    <h2 class="reveal">What we'll work on together</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card reveal">
+        <div class="benefit-card-image">
+          <img src="images/food-board-angle.jpg" alt="Colorful food" loading="lazy">
+        </div>
+        <div class="benefit-card-text">
+          <p class="benefit-label">Meal Ideas</p>
+          <p>Practical meals you actually enjoy—no rigid plans</p>
+        </div>
+      </div>
+      <div class="benefit-card reveal" style="--delay: 0.1s">
+        <div class="benefit-card-image">
+          <img src="images/alexia-reaching.jpg" alt="Choosing fresh ingredients" loading="lazy">
+        </div>
+        <div class="benefit-card-text">
+          <p class="benefit-label">Grocery Swaps</p>
+          <p>Swaps that fit your taste, budget, and needs</p>
+        </div>
+      </div>
+      <div class="benefit-card reveal" style="--delay: 0.2s">
+        <div class="benefit-card-image">
+          <img src="images/alexia-looking-away.jpg" alt="Relaxed approach to nutrition" loading="lazy">
+        </div>
+        <div class="benefit-card-text">
+          <p class="benefit-label">Gentle Routines</p>
+          <p>Support for energy, digestion, and mood</p>
+        </div>
+      </div>
+      <div class="benefit-card reveal" style="--delay: 0.1s">
+        <div class="benefit-card-image">
+          <img src="images/alexia-eggplants.jpg" alt="Hands-on food coaching" loading="lazy">
+        </div>
+        <div class="benefit-card-text">
+          <p class="benefit-label">Food Prep</p>
+          <p>Strategies that match your schedule and household</p>
+        </div>
+      </div>
+      <div class="benefit-card reveal" style="--delay: 0.2s">
+        <div class="benefit-card-image">
+          <img src="images/alexia-chin-hands.jpg" alt="Supportive coaching" loading="lazy">
+        </div>
+        <div class="benefit-card-text">
+          <p class="benefit-label">Intuitive Eating</p>
+          <p>Unlearning diet culture and building trust with food</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- How It Works -->
   <section class="how-it-works">
-    <h2>How in-home coaching works</h2>
-    
+    <h2 class="reveal">How in-home coaching works</h2>
+
     <div class="steps">
-      <div class="step">
-        <span class="step-number">01</span>
-        <h3>Free 10-minute call</h3>
-        <p>Optional quick fit check + logistics</p>
+      <div class="step reveal">
+        <div class="step-image">
+          <img src="images/alexia-outdoor-rocks.jpg" alt="Alexia portrait" loading="lazy">
+        </div>
+        <div class="step-text">
+          <span class="step-number">Step 01</span>
+          <h3>Free 10-minute call</h3>
+          <p>Optional quick fit check + logistics</p>
+        </div>
       </div>
-      
-      <div class="step">
-        <span class="step-number">02</span>
-        <h3>Session 1 — In your home</h3>
-        <p>We talk goals, challenges, current patterns, and what "better" looks like for you</p>
+
+      <div class="step reveal" style="--delay: 0.1s">
+        <div class="step-image">
+          <img src="images/alexia-behind-board.jpg" alt="Alexia with food board" loading="lazy">
+        </div>
+        <div class="step-text">
+          <span class="step-number">Step 02</span>
+          <h3>Session 1 — In your home</h3>
+          <p>We talk goals, challenges, current patterns, and what "better" looks like for you</p>
+        </div>
       </div>
-      
-      <div class="step">
-        <span class="step-number">03</span>
-        <h3>Session 2+ — Custom to you</h3>
-        <p>Choose what helps most:</p>
-        <ul>
-          <li>Grocery store coaching trip</li>
-          <li>Home food-prep session</li>
-          <li>Pantry/fridge refresh + meal brainstorming</li>
-          <li>Movement support "get started" session</li>
-        </ul>
+
+      <div class="step reveal" style="--delay: 0.2s">
+        <div class="step-image">
+          <img src="images/alexia-closeup-smile.jpg" alt="Alexia smiling" loading="lazy">
+        </div>
+        <div class="step-text">
+          <span class="step-number">Step 03</span>
+          <h3>Session 2+ — Custom to you</h3>
+          <p>Choose what helps most:</p>
+          <ul>
+            <li>Grocery store coaching trip</li>
+            <li>Home food-prep session</li>
+            <li>Pantry/fridge refresh + meal brainstorming</li>
+            <li>Movement support "get started" session</li>
+          </ul>
+        </div>
       </div>
     </div>
-    
-    <p class="reassurance">No shame. No perfection. We build sustainable changes—together.</p>
+
+    <p class="reassurance reveal">No shame. No perfection. We build sustainable changes—together.</p>
   </section>
 
   <!-- About -->
   <section class="about" id="about">
-    <div class="about-image">
-      <img src="images/alexia_profile.png" alt="Alexia Valdes">
+    <div class="about-images reveal">
+      <div class="about-img-main">
+        <img src="images/alexia-food-portrait.jpg" alt="Alexia Valdes with a beautiful food spread" loading="lazy">
+      </div>
+      <div class="about-img-secondary">
+        <img src="images/alexia-forest-portrait.jpg" alt="Alexia in the Pacific Northwest forest" loading="lazy">
+      </div>
+      <div class="about-img-secondary">
+        <img src="images/alexia-closeup-smile.jpg" alt="Alexia smiling outdoors" loading="lazy">
+      </div>
     </div>
     <div class="about-content">
-      <h2>Meet Alexia</h2>
-      <p>I'm Alexia, an integrative nutrition coach with a Master of Science in Integrative Nutrition from Bastyr University (2024).</p>
-      <p>My work is rooted in whole-life balance and a compassionate, science-informed approach that supports health at any size and helps women recover from diet culture.</p>
-      <p>Eating well shouldn't require suffering—my goal is to help you feel nourished, confident, and grounded in your food choices.</p>
-      <p class="about-note">Additional credentials and licensing are in progress.</p>
+      <h2 class="reveal">Meet Alexia</h2>
+      <p class="reveal">I'm Alexia, an integrative nutrition coach with a Master of Science in Integrative Nutrition from Bastyr University (2024).</p>
+      <p class="reveal">My work is rooted in whole-life balance and a compassionate, science-informed approach that supports health at any size and helps women recover from diet culture.</p>
+      <p class="reveal">Eating well shouldn't require suffering—my goal is to help you feel nourished, confident, and grounded in your food choices.</p>
+      <div class="credential-badge reveal">
+        WA State Certified Nutritionist <span>· #NUTR.NU.70090265 · Active</span>
+      </div>
     </div>
   </section>
 
   <!-- Values / Promise -->
   <section class="values">
-    <h2>What you can expect</h2>
-    <div class="values-grid">
-      <div class="value-card">
-        <span class="value-icon">○</span>
-        <p>A judgment-free space</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">○</span>
-        <p>Zero pressure to pursue weight loss</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">○</span>
-        <p>Flexible, real-life strategies</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">○</span>
-        <p>Coaching that respects sensory needs and neurodiversity</p>
+    <div class="values-bg">
+      <img src="images/alexia-outdoor-tree.jpg" alt="" loading="lazy" aria-hidden="true">
+    </div>
+    <div class="values-overlay">
+      <h2 class="reveal">What you can expect</h2>
+      <div class="values-grid">
+        <div class="value-card reveal">
+          <span class="value-icon">&#9675;</span>
+          <p>A judgment-free space</p>
+        </div>
+        <div class="value-card reveal" style="--delay: 0.1s">
+          <span class="value-icon">&#9675;</span>
+          <p>Zero pressure to pursue weight loss</p>
+        </div>
+        <div class="value-card reveal" style="--delay: 0.2s">
+          <span class="value-icon">&#9675;</span>
+          <p>Flexible, real-life strategies</p>
+        </div>
+        <div class="value-card reveal" style="--delay: 0.15s">
+          <span class="value-icon">&#9675;</span>
+          <p>Coaching that respects sensory needs and neurodiversity</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="faq">
-    <h2>Questions</h2>
-    
-    <details>
+  <section class="faq" id="faq">
+    <h2 class="reveal">Questions</h2>
+
+    <details class="reveal">
       <summary>Do you create meal plans?</summary>
       <p>I focus on meal ideas and flexible frameworks rather than strict plans—so changes fit your real life.</p>
     </details>
-    
-    <details>
+
+    <details class="reveal" style="--delay: 0.05s">
       <summary>Do I have to count calories or macros?</summary>
       <p>No. This approach is minimal-tracking and centered on well-being, not perfection.</p>
     </details>
-    
-    <details>
+
+    <details class="reveal" style="--delay: 0.1s">
       <summary>Where do you meet clients?</summary>
       <p>Primarily in-home in Gig Harbor and Tacoma, with select sessions at grocery stores or other agreed locations.</p>
     </details>
-    
-    <details>
+
+    <details class="reveal" style="--delay: 0.15s">
       <summary>Do you offer virtual sessions?</summary>
       <p>Not at this time—my focus is on in-person, hands-on support.</p>
     </details>
@@ -164,28 +250,35 @@
 
   <!-- Final CTA -->
   <section class="final-cta" id="contact">
-    <h2>Ready to feel better around food?</h2>
-    <p class="pricing">Sessions start at $90/hour</p>
-    <a href="mailto:PleasureIntegrativeNutrition@gmail.com?subject=Nutrition Coaching Inquiry" class="btn btn-primary btn-large">Schedule a Session</a>
-    
-    <div class="contact-info">
-      <p>Or reach out directly:</p>
-      <p><strong>Alexia Valdes</strong></p>
-      <p><a href="tel:2533639467">253-363-9467</a></p>
-      <p><a href="mailto:PleasureIntegrativeNutrition@gmail.com">PleasureIntegrativeNutrition@gmail.com</a></p>
-      <address class="mailing-address">
-        <p>Pleasure Nutrition</p>
-        <p>5114 Point Fosdick Dr</p>
-        <p>Ste F, #1006</p>
-        <p>Gig Harbor, WA 98335</p>
-      </address>
+    <div class="final-cta-bg">
+      <img src="images/alexia-bw.jpg" alt="" loading="lazy" aria-hidden="true">
+    </div>
+    <div class="final-cta-overlay">
+      <h2 class="reveal">Ready to feel better around food?</h2>
+      <p class="pricing reveal">Sessions start at $90/hour</p>
+      <a href="mailto:PleasureIntegrativeNutrition@gmail.com?subject=Nutrition Coaching Inquiry" class="btn btn-primary btn-large reveal">Schedule a Session</a>
+
+      <div class="contact-info reveal">
+        <p>Or reach out directly:</p>
+        <p><strong>Alexia Valdes</strong></p>
+        <p><a href="tel:2533639467">253-363-9467</a></p>
+        <p><a href="mailto:PleasureIntegrativeNutrition@gmail.com">PleasureIntegrativeNutrition@gmail.com</a></p>
+        <address class="mailing-address">
+          <p>Pleasure Nutrition</p>
+          <p>5114 Point Fosdick Dr</p>
+          <p>Ste F, #1006</p>
+          <p>Gig Harbor, WA 98335</p>
+        </address>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>This coaching is for education and wellness support and does not replace medical care.</p>
-    <p class="copyright">© 2025 Alexia Valdes</p>
+    <p class="footer-credential">WA State Certified Nutritionist · Credential #NUTR.NU.70090265 · Active</p>
+    <p class="copyright">&copy; 2025 Alexia Valdes</p>
+    <p class="made-by">Made by <a href="https://www.comadrelab.dev/" target="_blank" rel="noopener">ComadreLab</a></p>
   </footer>
 
   <!-- Mobile Sticky CTA -->
